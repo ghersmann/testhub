@@ -1,0 +1,13 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  color: darkslategrey;
+  font-family: monospace;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 25px;
+}
