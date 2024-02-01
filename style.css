@@ -4,10 +4,32 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: blackout_two_am-webfont;
+  src: url(./fonts/blackout_two_am-webfont.ttf) format(truetype),
+    url(./fonts/blackout_two_am-webfont.woff) format(woff),
+    url(./fonts/blackout_two_am-webfont.woff2) format(woff2);
+}
+
 html {
   color: darkslategrey;
-  font-family: monospace;
+  font-family: blackout_two_am-webfont, monospace;
   margin: 0 auto;
-  max-width: 700px;
-  padding: 25px;
+  max-width: 767px;
+  padding: 5px;
+}
+
+.pbottom {
+  background-color: hotpink;
+  padding-top: auto;
+  position: absolute;
+  bottom: 25px;
+  text-align: right;
+  width: 100%;
+  max-width: 767px;
+}
+
+.img-middle {
+  width: 100%;
+  max-width: 767px;
 }
