@@ -4,32 +4,70 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: blackout_two_am-webfont;
-  src: url(./fonts/blackout_two_am-webfont.ttf) format(truetype),
-    url(./fonts/blackout_two_am-webfont.woff) format(woff),
-    url(./fonts/blackout_two_am-webfont.woff2) format(woff2);
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    red 20%,
+    green,
+    purple,
+    blue 80%
+  );
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 0.3rem solid green;
+}
+
+@media screen and (min-width: 786px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 html {
-  color: darkslategrey;
-  font-family: blackout_two_am-webfont, monospace;
+  font-size: 16px;
+  _max-width: 70%;
   margin: 0 auto;
-  max-width: 767px;
-  padding: 5px;
+  height: 100vh;
 }
 
-.pbottom {
+header {
+  background-color: aqua;
+  margin: 3rem;
+}
+
+.headerlink {
+  padding: 1rem;
   background-color: hotpink;
-  padding-top: auto;
-  position: absolute;
-  bottom: 25px;
-  text-align: right;
-  width: 100%;
-  max-width: 767px;
+  border: 0.3rem solid green;
 }
 
-.img-middle {
-  width: 100%;
-  max-width: 767px;
+main {
+  height: 70vh;
+  border: 0.4rem solid saddlebrown;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(./img/2013-hochzillertal-kaltenbach-1128.jpg);
+  background-size: cover;
+}
+
+div {
+  _background-color: hotpink;
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+div:last-child {
+  _background-color: hotpink;
 }
